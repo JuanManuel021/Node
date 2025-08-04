@@ -8,7 +8,7 @@ const routes = express.Router();
 const motoController = require('../controllers/motoController');
 
 // Define la ruta para crear una nueva moto (POST /moto)
-routes.post('/moto', motoController.nuevaMoto);
+routes.post('/moto/crearMoto', motoController.nuevaMoto);
 
 // Define la ruta para obtener todas las motos (GET /moto)
 routes.get('/moto', motoController.mostrarMotos);
