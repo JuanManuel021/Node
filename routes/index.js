@@ -11,7 +11,7 @@ const motoController = require('../controllers/motoController');
 routes.post('/moto/crearMoto', motoController.nuevaMoto);
 
 // Define la ruta para obtener todas las motos (GET /moto)
-routes.get('/moto', motoController.mostrarMotos);
+routes.get('/moto/obtenerTodasMotos', motoController.mostrarMotos);
 
 // Define la ruta para obtener una moto por su modelo (GET /moto/:modeloMoto)
 routes.get('/moto/:modeloMoto', motoController.mostrarMotoPorModelo);
